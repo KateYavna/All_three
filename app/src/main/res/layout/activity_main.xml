@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btPictures"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/pictures"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAnecdotes"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:text="@string/anecdotes"
+        app:layout_constraintStart_toEndOf="@+id/btPictures"
+        app:layout_constraintTop_toTopOf="@+id/btPictures" />
+
+    <Button
+        android:id="@+id/btSigns"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="@string/signs"
+        app:layout_constraintEnd_toEndOf="@+id/btAnecdotes"
+        app:layout_constraintTop_toBottomOf="@+id/btAnecdotes" />
+
+    <Button
+        android:id="@+id/btQuotes"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/quotes"
+        app:layout_constraintEnd_toEndOf="@+id/btSigns"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btSigns"
+        app:layout_constraintTop_toBottomOf="@+id/btSigns" />
+
+    <Button
+        android:id="@+id/btSeaPictures"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="@string/sea_pictures"
+        app:layout_constraintEnd_toEndOf="@+id/btQuotes"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/btQuotes"
+        app:layout_constraintTop_toBottomOf="@+id/btQuotes" />
+
+    <Button
+        android:id="@+id/btEmotions"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/emotion_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btSeaPictures"
+        app:layout_constraintTop_toBottomOf="@+id/btSeaPictures" />
+
+    <Button
+        android:id="@+id/btAuthor"
+        style="@style/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:text="@string/about_author"
+        app:layout_constraintBottom_toBottomOf="@+id/btEmotions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWow"
+        android:layout_width="142dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btQuotes"
+        app:srcCompat="@drawable/wow" />
+
+    <ImageView
+        android:id="@+id/ivCool"
+        android:layout_width="126dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/btSeaPictures"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cool" />
+
+    <ImageView
+        android:id="@+id/ivSuper"
+        android:layout_width="103dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btSigns"
+        app:srcCompat="@drawable/resource_super" />
+
+    <ImageView
+        android:id="@+id/ivPow1"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCool"
+        app:srcCompat="@drawable/catpow" />
+
+    <ImageView
+        android:id="@+id/ivPow2"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="50"
+        android:background="#B0EDDE"
+        app:layout_constraintEnd_toStartOf="@+id/btSeaPictures"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPow1"
+        app:srcCompat="@drawable/catpow" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="190dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAuthor"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/ivLight"
+        android:layout_width="111dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/btAnecdotes"
+        app:layout_constraintStart_toEndOf="@+id/btPictures"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/light" />
+
+    <ImageView
+        android:id="@+id/ivFlower"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/ivWow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSuper"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/flower" />
+
+    <ImageView
+        android:id="@+id/ivCat"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivCool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

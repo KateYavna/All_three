@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">All three</string>
+    <string name="pictures">Pictures</string>
+    <string name="anecdotes">Anecdotes</string>
+    <string name="signs">Signs</string>
+    <string name="quotes">Quotes</string>
+    <string name="sea_pictures">Sea pictures</string>
+    <string name="emotion_image">Emotions</string>
+    <string name="about_author">About the author</string>
+</resources>
